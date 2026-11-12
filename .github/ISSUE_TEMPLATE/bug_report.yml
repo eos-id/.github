@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible defect in an EOS repository.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include credentials, customer data, or sensitive personal information. Report security vulnerabilities privately using SECURITY.md."
+  - type: input
+    id: work_id
+    attributes:
+      label: Work or related issue ID
+      placeholder: "Optional identifier"
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. ...\n2. ..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "Version, commit, OS, runtime, deployment context"
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs and evidence
+      description: Include sanitized logs, test output, or screenshots.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Affected capability, actors, severity, and workaround.

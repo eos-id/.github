@@ -1,0 +1,37 @@
+name: Feature proposal
+description: Propose an outcome or capability improvement.
+title: "[Proposal]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "Start with the problem and desired outcome. Check existing capabilities and related work before proposing new primitives."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and affected actors
+      description: Who experiences the problem, and in what context?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should become possible or measurably better?
+    validations:
+      required: true
+  - type: textarea
+    id: existing
+    attributes:
+      label: Existing capability / reuse considered
+      description: What existing EOS capability, API, skill, or workflow did you inspect?
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and risks
+      description: Compatibility, security, privacy, regulation, cost, and operational constraints.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Examples, metrics, references, or related work IDs.
